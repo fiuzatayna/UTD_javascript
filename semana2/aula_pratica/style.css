@@ -1,0 +1,65 @@
+body{
+    background-color: chocolate;
+    color:whitesmoke;
+    height: 100%;
+    margin: 0px 5px;
+    font-size: 1erm;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+    display:flex; flex-direction: row;
+    margin: 0px 10px; 
+
+}
+
+#esquerda{
+    display: flex; flex-direction: column;
+    width: 40vw;
+}
+
+#direita{
+    display: flex; flex-direction: column;
+}
+
+#kid{
+    width: 300px !important;
+    height: auto;
+}
+
+@media screen and (max-width: 700px) {
+    body{
+        background-color: black;
+        color:pink;
+    }
+    p{
+        color:white;
+    }
+}
+
+a{
+    color:cornflowerblue;
+}
+
+#final{
+    border-color:orange;
+}
+
+fieldset{
+    border-radius: 5px;
+    border-color:black;
+    box-shadow: 3px 5px rgb(0,0,0,0.3);
+    background-color: rebeccapurple;
+    margin: 20px;
+}
+
+form{
+    margin: 10px;
+    padding: 5px;
+}
+
+form input{
+    width:30%;
+    height: 25px;
+    border-radius: 5px;
+}
