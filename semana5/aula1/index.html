@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+</html>
+
+<body>
+
+    <h2>Linguagem de programação</h2>
+
+    <main>
+        <p>Para saber mais, clique no <a href="#">link</a>.</p>
+
+        <a href="#"> <img style="width:100px;height:auto;" src="/home/tayna/Downloads/academico/doutorado/cursos_avulsos/web_c_javascript_utd/semana1/aula_teorica/thispersondoesntexist2.jpeg" /> </a>
+
+        <p>Linguagens de programação:</p>
+        <ul id="listauL">
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Java</li>
+        </ul>
+
+        <p>Tecnologias complementares:</p>
+        <ol>
+            <li>MySQL</li>
+            <li>Insomnia</li>
+            <li>GitHub</li>
+        </ol>
+
+        <form action="">
+            <label for="indoor"><input id="indoor" type="radio" name="indoor outdoor" value="indoor"></label>
+            <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"></label>
+            <label for="loving"><input id="backend" type="checkbox" name="especialização" value="backend"></label>
+            <label for="lazy"><input id="frontend" type="checkbox" name="personality" value="frontend"></label>
+            <label for="energetic"><input id="fullstack" type="checkbox" name="personality" value="fullstack"></label>
+            <input id="texto-curriculo" type="text" placeholder="Curriculo">
+            <button onClick=mostraValor() type="submit">Submit</button>
+        </form>
+
+        <div class="container">
+            <div class="content">
+                <div id="Cadastro">
+                    <form>
+                        <fieldset>
+                            <legend><h1>Cadastro</h1></legend>
+
+                            <p>
+                                <label for="id_cad">Id</label>
+                                <input id="id_cad"
+                                    name="id_cad"
+                                    type="number"
+                                    readonly value="5"/>
+                            </p>
+
+                            <p>
+                                <label for="nome_cad">Seu nome</label>
+                                <input id="nome_cad"
+                                    name="nome_cad"
+                                    required="required"
+                                    type="text"
+                                    placeholder="Digite seu nome"/>
+                            </p>
+                            
+                            <p>
+                                <label for="end_cad">Seu endereço</label>
+                                <input id="end_cad"
+                                    name="end_cad"
+                                    required="required"
+                                    type="text"
+                                    placeholder="Digite seu endereço"/>
+                            </p>                            
+
+                            <p>
+                                <label for="idade_cad">Sua idade</label>
+                                <input id="idade_cad"
+                                    name="idade_cad"
+                                    required="required"
+                                    type="text"
+                                    placeholder="Digite sua idade"/>
+                            </p>                            
+
+                            <p>
+                                <input type="submit" value="Update"/>
+                            </p>
+
+                        </fieldset>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+<script src="funcoes.js"></script>
+
+</body>
