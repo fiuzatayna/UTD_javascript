@@ -1,53 +1,35 @@
 //--------------- programação orientada a objeto ----------------
 
-//--------------- aula 3/3 ---------------
+//--------------- aula sincrona ---------------
 
-// herança
-
-class Account{
-    constructor(){
-        this.balance = 0;
-    }
-
-    withdrawal(value){
-        if (value > this.balance){
-            console.log("Not enough funds!");
-        } else {
-            this.balance -= value
-            //equivalent to this.balance = this.balance - value;
-        }
-    }
-
-    deposit(value){
-        this.balance += value
-        //equivalent to this.balance = this.balance + value;
-    }
+function Pessoa(nome, idade){
+    this.nome = nome;
+    this.idade = idade;
 }
 
-class Savings extends Account{
-    yield(percentage){
-        this.balance += this.balance * (percentage/100);
-    }
+Pessoa.prototype.andar = function(){
+    console.log(`${this.nome} está andando elegantemente`)
 }
 
-class Current extends Account{
-    maintenance(percentage){
-        this.balance -= this.balance * (percentage/100);
-    }
+Pessoa.prototype.mostraIdade = function(){
+    console.log(`${this.nome} tem ${this.idade} ano(s).`)
 }
 
-let c1 = new Savings;
 
-c1.deposit(1000);
+/*
+class Aluno extends Pessoa{
 
-console.log(c1.balance);
-
-c1.yield(10);
-
-console.log(c1.balance);
-
-c1.withdrawal(300);
-
-console.log(c1.balance);
+}
 
 
+*/
+
+let nome = document.querySelector("#nome");
+let idade = document.querySelector("#idade");
+
+function mostraObjecto(){
+    var p1 = new Pessoa(nome.value,idade.value);
+
+    p1.mostraIdade();
+    p1.andar();
+}
